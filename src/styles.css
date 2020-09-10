@@ -1,0 +1,169 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+#head {
+  text-align: center;
+  background-color: #41444b;
+  color: #dbe3e5;
+  font-family: cursive;
+}
+
+body {
+  background-color: #dbe3e5;
+}
+
+.heading {
+  margin-bottom: 2rem;
+}
+.passbar {
+  margin-bottom: 2rem;
+}
+.cardSimple {
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 7px rgba(0, 0, 0, 0.25),
+    0px 0px 5px 7px rgba(0, 0, 0, 0);
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  height: 10rem;
+  width: 10em;
+  background-color: white;
+}
+
+.cardSimple:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25),
+    0px 0px 5px 5px rgba(0, 0, 0, 0);
+}
+
+.text {
+  padding: 2px 16px;
+  background-color: #41444b;
+  color: #dbe3e5;
+  border-radius: 10px;
+  font-family: "Balsamiq Sans", cursive;
+}
+.count {
+  justify-content: center;
+  font-size: 50px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+.stat {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+.longDiv {
+  display: flex;
+  justify-content: center;
+}
+.long {
+  width: 30rem;
+  margin-top: 5rem;
+}
+.shortner {
+  margin: 5rem;
+}
+#longUrl {
+  border-style: groove;
+  height: 3rem;
+  border-width: 0.1rem;
+}
+
+#short {
+  margin-top: 3rem;
+}
+.navhead {
+  font-family: cursive;
+}
+.balsa {
+  font-family: "Balsamiq Sans", cursive;
+}
+
+#alias {
+  border-style: groove;
+  height: 3rem;
+  border-width: 0.1rem;
+}
+
+.tableBorder {
+  border: 1px solid black;
+}
